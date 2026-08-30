@@ -20,5 +20,3 @@ def downloadFace():
 @app.route("/downloadComputerData")
 def downloadComputerData():
     return send_file("data.txt", as_attachment=True)
-
-app.run(host="0.0.0.0", port=5000)
